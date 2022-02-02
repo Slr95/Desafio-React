@@ -1,19 +1,20 @@
 import { Outlet, Link } from "react-router-dom";
+import Button from '@material-ui/core/Button'
 
 const Layout = () => {
     return(
         <>
             <nav>
                 <ul>
-                    <li>
+                    <Button variant="contained" color="secondary">
                         <Link to='/'>Home</Link>
-                    </li>
-                    <li>
+                    </Button>
+                    <Button variant="contained" color="success">
                         <Link to='/user'>Usuarios</Link>
-                    </li>
-                    <li>
+                    </Button>
+                    <Button variant="contained" color="primary">
                         <Link to='/messages'>Mensajes</Link>
-                    </li>
+                    </Button>
                 </ul>
             </nav>
             <Outlet/>
