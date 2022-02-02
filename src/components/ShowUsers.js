@@ -10,7 +10,9 @@ const ShowUsers = () => {
             {data &&
                 data.map(
                     (item) => {
-                        return <p key={item.id}>{item.username}</p>
+                        return <li className="users" key={item.id}>
+                                    {item.username}
+                                </li>
                     }
                 ) 
             }

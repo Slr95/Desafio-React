@@ -10,7 +10,9 @@ const ShowMessages = () => {
             {data &&
                 data.map(
                     (item) => {
-                        return <p key={item.text}>{item.user}</p>
+                        return <li className="users" key={item.id}>
+                                    {item.text}
+                                </li>
                     }
                 ) 
             }
